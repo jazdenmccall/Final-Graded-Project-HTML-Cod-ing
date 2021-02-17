@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- jazden mccall
+         Final Graded Project: HTML Coding
+         mccall.jazden0@gmail.com
+         AC2002745 -->
+    <title>Order Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+        .col-25 {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+        }
+
+        .col-50 {
+            -ms-flex: 50%; /* IE10 */
+            flex: 50%;
+        }
+
+        .col-75 {
+            -ms-flex: 75%; /* IE10 */
+            flex: 75%;
+        }
+
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 0 16px;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+            .btn:hover {
+                background-color: #45a049;
+            }
+
+        a {
+            color: #2196F3;
+        }
+
+        hr {
+            border: 1px solid lightgrey;
+        }
+
+        span.price {
+            float: right;
+            color: grey;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+
+            .col-25 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .hdr {
+            background-image: url(img/header.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 248px;
+            width: 100%;
+            background-color: #ff5933;
+            color: #ecdce2;
+            Font-Size: 30px;
+            padding: 20px 0px 20px 0px;
+            text-align: Center;
+            background-size: 1356px 332px;
+        }
+
+        .hdrtext {
+            color: red;
+            background-color: #99334bbf;
+            font-size: 40px;
+            font-family: sans-serif;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .nav {
+            float: left;
+            padding-top: 20px;
+            width: 100%;
+            font-size: 20pt;
+            color: #5c8a8a;
+            text-align: center;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0px 0px 0px 0px;
+            color: #5c8a8a;
+            background-color: #ec4b7f47;
+        }
+    </style>
+    <body>
+        <div class="hdr">
+
+        </div>
+        <div class="nav">
+
+            <a href="Index.html">Home</a> &nbsp&nbsp||&nbsp&nbsp
+            <a href="Menu.html">Menu</a>&nbsp&nbsp||&nbsp&nbsp
+            <a href="Special.html">Special</a>&nbsp&nbsp||&nbsp&nbsp
+            <a href="GiftCard.html">Gift Card</a> &nbsp&nbsp||&nbsp&nbsp
+            <a href="orderonline.html">Order Online</a> &nbsp&nbsp||&nbsp&nbsp
+            <a href="aboutus.html">About Us</a> &nbsp&nbsp||&nbsp&nbsp
+            <a href="Contactus.html">Contact Us</a> &nbsp&nbsp||&nbsp&nbsp
+
+        </div>
+
+        <h1 class="h1class">ORDER ONLINE</h1>
+
+
+        <div class="row">
+            <div class="col-75">
+
+
+
+                <div class="container" style="background-image:url(bar.png);">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Abc">
+                            <label for="fname"><i class="fa fa-user"></i> Last Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Xyz">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="abc@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Phone NO</label>
+                            <input type="text" id="phoneno" name="phoneno" placeholder="1234567890">
+                            <label>Desired pickup Time </label>
+                            <select id="sTime">
+                                <option value="AM11">11.00 AM</option>
+                                <option value="AM11">11.30 AM</option>
+                                <option value="PM12">12.00 PM</option>
+                                <option value="PM12">12.30 PM</option>
+                                <option value="PM1">1.00 PM</option>
+                                <option value="PM1">1.30 PM</option>
+                                <option value="PM2">2.00 PM</option>
+                                <option value="PM2">2.30 PM</option>
+                                <option value="PM3">3.00 PM</option>
+                                <option value="PM3">3.30 PM</option>
+                                <option value="PM4">4.00 PM</option>
+                                <option value="PM4">4.30 PM</option>
+                                <option value="PM5">5.00 PM</option>
+                                <option value="PM5">5.30 PM</option>
+                                <option value="PM6">6.00 PM</option>
+                                <option value="PM6">6.30 PM</option>
+                                <option value="PM7">7.00 PM</option>
+                                <option value="PM7">7.30 PM</option>
+                                <option value="PM8">8.00 PM</option>
+                                <option value="PM8">8.30 PM</option>
+                                <option value="PM9">9.00 PM</option>
+                                <option value="PM9">9.30 PM</option>
+                                <option value="PM10">10.00 PM</option>
+                                <option value="PM10">10.30 PM</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value="Order" class="btn">
+
+                </div>
+
+                <div class="footer">
+                    Copyright for Yohnstudio. Documentation Reserve
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

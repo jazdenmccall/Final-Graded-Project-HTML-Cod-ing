@@ -1,0 +1,1 @@
+./gradlew -b  export.gradle build -PinputHost='chaqhsdbst009v.cha.rbxd.ds' -PoutputHost='chaqhsdbst047v.cha.rbxd.ds' -Dhttps.proxyHost=outboundproxycha.cha.rbxd.ds  -Dhttps.proxyPort=3128

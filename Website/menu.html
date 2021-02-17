@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Menu</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <!-- jazden mccall
+         Final Graded Project: HTML Coding
+         mccall.jazden0@gmail.com
+         AC2002745 -->
+</head>
+<body>
+   <div class="hdr">
+      <div class="headtext">
+         <h1 class="hdrtext">John Rucker's Steak House</h1>
+         <h2 class="innertext"><i>The best steak in Scottsdale!</i></h2>
+      </div>
+   </div>
+   <div class="nav">                    
+      <a href="Index.html">Home</a> &nbsp&nbsp||&nbsp&nbsp
+      <a href="Menu.html">Menu</a>&nbsp&nbsp||&nbsp&nbsp
+      <a href="Special.html">Special</a>&nbsp&nbsp||&nbsp&nbsp
+      <a href="GiftCard.html">Gift Card</a> &nbsp&nbsp||&nbsp&nbsp
+      <a href="orderonline.html">Order Online</a> &nbsp&nbsp||&nbsp&nbsp
+      <a href="aboutus.html">About Us</a> &nbsp&nbsp||&nbsp&nbsp
+      <a href="Contactus.html">Contact Us</a> &nbsp&nbsp||&nbsp&nbsp
+   </div>
+   <h1 class="h1class">MENU</h1>
+   <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'beer')">Beer</button>
+      <button class="tablinks" onclick="openCity(event, 'wine')">Wine</button>
+      <button class="tablinks" onclick="openCity(event, 'dess')">Desserts</button>
+      <button class="tablinks" onclick="openCity(event, 'favorites')"> Favorites</button>
+      <button class="tablinks" onclick="openCity(event, 'specials')">  Specials</button>
+   </div>
+   <div id ="maincontent" >
+      <div id ="beer" class="tabcontent"  >
+         <h1 style="margin-top:3%">Beer</h1>
+         <table>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\arizona.jpg" width= "250" height ="250"
+                        >
+                     <dt>Arizona-Crafted-Beer</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\wine-with-steak-dinners.jpg" width= "250" height ="250"
+                        >
+                     <dt>Wine-With-Steak-Dinner</dt>
+                  </dl>
+               </td>
+            </tr>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\abc .jpg" width= "250" height ="250">
+                     <dt> Arizona Stronghold’s Merlot </dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\cde.jpg" width= "250" height ="250">
+                     <dt>Four Peak’s Hop Knot</dt>
+                  </dl>
+               </td>
+            </tr>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\beer-with-steak-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Beer-With-Steak-Dinner</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\wine-with-steak-dinners.jpg" width= "250" height ="250"
+                        >
+                     <dt>Wine-With-Steak-Dinner</dt>
+                  </dl>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id ="wine" class="tabcontent">
+         <h1 style="margin-top:3%">Wine</h1>
+         <table>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\beer-with-steak-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Beer-With-Steak-Dinner</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\wine-with-steak-dinners.jpg" width= "250" height ="250"
+                        >
+                     <dt>Wine-With-Steak-Dinner</dt>
+                  </dl>
+               </td>
+            </tr>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\abc .jpg" width= "250" height ="250">
+                     <dt> Arizona Stronghold’s Merlot </dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\cde.jpg" width= "250" height ="250">
+                     <dt>Four Peak’s Hop Knot</dt>
+                  </dl>
+               </td>
+            </tr>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\arizona.jpg" width= "250" height ="250"
+                        >
+                     <dt>Arizona-Crafted-Beer</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\wine-with-steak-dinners.jpg" width= "250" height ="250"
+                        >
+                     <dt>Wine-With-Steak-Dinner</dt>
+                  </dl>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id= "dess" class="tabcontent">
+         <h1 style="margin-top:3%">Desserts</h1>
+         <table>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\caramel-mousse-cake.jpg" width= "250" height ="250">
+                     <dt>Caramel-Mousse-Cake</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\ice-cream.jpg" width= "250" height ="250">
+                     <dt>Ice-Cream</dt>
+                  </dl>
+               </td>
+            </tr>
+         </table>
+         <!--end#dess-->	
+      </div>
+      <div id= "favorites" class="tabcontent">
+         <h1 style="margin-top:3%">Favorites</h1>
+         <table>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\steak-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Steak-Dinner</dt>
+                  </dl>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\salad-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Salad-Dinner</dt>
+                  </dl>
+               </td>
+            </tr>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\steak-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Steak-Dinner</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\salad-closeup.jpg" width= "250" height ="250" >
+                     <dt>Salad-Closeup</dt>
+                  </dl>
+               </td>
+            </tr>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\beer-with-steak-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Beer-With-Steak-Dinner</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\salad-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Salad-Dinner</dt>
+                  </dl>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--end#dess-->	
+      <div id= "specials" class="tabcontent">
+         <h1 style="margin-top:3%">Specials</h1>
+         <table>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\arizona.jpg" width= "250" height ="250"
+                        >
+                     <dt>Arizona-Crafted-Beer</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\salad-dinner.jpg" width= "250" height ="250"
+                        >
+                     <dt>Salad-Dinner</dt>
+                  </dl>
+               </td>
+            </tr>
+            <tr class="row">
+               <td class="column" >
+                  <dl>
+                     <img src="img\salad-closeup.jpg" width= "250" height ="250" >
+                     <dt>Salad-Closeup</dt>
+                  </dl>
+               </td>
+               <td class="column" >
+                  <dl>
+                     <img src="img\steak.jpg" width= "250" height ="250" >
+                     <dt>Steak</dt>
+                  </dl>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <!--end#dess-->
+   </div>
+   </div>
+   <!--end#maincontent-->			 
+   <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+   </script>
+   <div class="footer">
+      Copyright for Yohnstudio. Documentation Reserve.
+   </div>
+</body>
+</html>
