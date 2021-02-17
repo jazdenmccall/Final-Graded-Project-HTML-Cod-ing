@@ -1,0 +1,2 @@
+# Final-Graded-Project-HTML-Cod-ing
+John Rucker, the owner of Rucker’s in Scottsdale, Arizona, asks you to create a web page for his restaurant. He wants his customers to be able to view photos of the menu, pricing information, and atmosphere they can expect when they visit the restaurant. He wants you to link this page to a web form where customers can make a reservation. He also wants to monitor visitor activity, such as how long visitors view a page and how many visitors come to the site daily. Follow the instructions below to create this website for Rucker’s.
